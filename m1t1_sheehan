@@ -3,7 +3,7 @@ M1T1 Hellow World:
 1st program to make sure we can talk to the user
 Using cout to print the window 
 
-INPUTL: NONE
+INPUT: NONE
 PROCESSING: NONE
 OUTPUT: The users name as a greeting
 */
