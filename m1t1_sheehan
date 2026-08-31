@@ -1,0 +1,22 @@
+/*
+M1T1 Hellow World:
+1st program to make sure we can talk to the user
+Using cout to print the window 
+
+INPUTL: NONE
+PROCESSING: NONE
+OUTPUT: The users name as a greeting
+*/
+
+// Works that will be explained later
+#include <iostream>
+using namespace std;
+
+// Program returns an int( a number) zero if everything works.
+
+int main () {
+
+    cout <<"Hello, world!";
+    cout << endl; // new line
+    return 0; // no errors
+}
