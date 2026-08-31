@@ -1,0 +1,24 @@
+// CS134
+// M1LAB
+// Nicholas Sheehan
+// 8/30/2026
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hellow World!/n";
+    string name = "Jane Smith";
+    int apples =255;
+    double pricePerApple = 0.25;
+
+    cout << "Welcome to " << name;
+    cout << "'s apple farm" << endl;
+
+    cout << "we have " << "apples " << " apples for sale" << endl;
+
+    cout << "Price is $" << "pricePerapple" << "each" << endl;
+
+  // calculates total price
+    double totalPrice = (double)apples * pricePerApple;
+cout << "Total price is: $" << totalPrice << endl;
