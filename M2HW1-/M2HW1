@@ -1,0 +1,153 @@
+/* 
+CSC 134
+M2HW1 - Gold
+Nicholas Sheehan
+10/4/2026
+*/
+
+
+
+// Question 1
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // Variables
+    string name;
+    double startingBalance, deposit, withdrawal, finalBalance;
+    int accountNumber = 123456;
+
+    // Desired output format for numbers
+    cout << setprecision(2) << fixed << showpoint;
+
+    // Getting account information
+    cout << "Enter the name of the account: ";
+    getline(cin, name);
+
+    cout << "Enter the starting account balance: $";
+    cin >> startingBalance;
+
+    cout << "Enter the amount of deposit: $";
+    cin >> deposit;
+
+    cout << "Enter the amount of withdrawal: $";
+    cin >> withdrawal;
+
+    // Calculate the final account balance
+    finalBalance = startingBalance + deposit - withdrawal;
+
+    // Display the account information
+    cout << "\nName on account: " << name << endl;
+    cout << "Account number: " << accountNumber << endl;
+    cout << "Final account balance: $" << finalBalance << endl;
+
+    return 0; 
+}
+
+// Question 2
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+    // Constants for cost and amount charged
+    const double COST_PER_CUBIC_FOOT = 0.30;
+    const double CHARGE_PER_CUBIC_FOOT = 0.52;
+
+    // Variables
+    double length, // Crates length
+    width, // Crates Width
+    height, // The crates height
+    volume, // Volume of the crate
+    cost, // Cost to build the crate
+    charge, // Customers charge for the crate
+    profit; // The profit made of of the crate
+
+    // Desired output formatting for numbers
+    cout << setprecision(2) << fixed << showpoint;
+
+    // Crates Length, width, and height
+    cout << "Enter the dimensions of the crate (in feet):\n";
+    cout << "Length: ";
+    cin >> length;
+    cout << "Width: ";
+    cin >> width;
+    cout << "Height: ";
+    cin >> height;
+
+    // Calculate the crates volume, the cost to product it,
+    // the charge and the profit
+    volume = length * width * height;
+    cost = volume * COST_PER_CUBIC_FOOT;
+    charge = volume * CHARGE_PER_CUBIC_FOOT;
+    profit = charge - cost;
+
+    // Display the calculated data.
+    cout << "The volume of the crate is ";
+    cout << volume << " cubic feet.\n";
+    cout << "Cost to build: $" << cost << endl;
+    cout << "Charge to customer: $" << charge << endl;
+    cout << "Profit: $" << profit << endl;
+
+    return 0;
+}
+
+// Question 3
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Variables
+    int pizzas, slicesPerPizza, visitors, leftover;
+
+    // Get information from the user
+    cout << "Enter the number of pizzas: ";
+    cin >> pizzas;
+
+    cout << "Enter the number of slices per pizza: ";
+    cin >> slicesPerPizza;
+
+    cout << "Enter the number of visitors: ";
+    cin >> visitors;
+
+    // Calculate the number of slices left over
+    leftover = (pizzas * slicesPerPizza) - (visitors * 3);
+
+    // Display the result
+    cout << "The number of slices left over is: " << leftover << endl;
+
+    return 0;
+}
+
+// Question 4
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // Variables
+    string letsGo, school, team, cheerOne, cheerTwo;
+
+    // Assign values to the variables
+    letsGo = "Let's go ";
+    school = "FTCC";
+    team = "Trojans";
+
+    // Build the cheers using string concatenation
+    cheerOne = letsGo + school;
+    cheerTwo = letsGo + team;
+
+    // Display the cheers
+    cout << cheerOne << endl;
+    cout << cheerOne << endl;
+    cout << cheerOne << endl;
+    cout << cheerTwo << endl;
+
+    return 0;
+}
