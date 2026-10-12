@@ -28,4 +28,5 @@ int main() {
 
     //display results
     cout << "Rectangle one has area of " << areaOne << endl;
+    cout << "Rectangle two has area of " << areaTwo << endl;
 }
