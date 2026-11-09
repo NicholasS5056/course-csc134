@@ -2,7 +2,7 @@
 #include <iomanip>
 using namespace std;
 
-/* M5LAB1
+/* M5LAB2
  Nicholas Sheehan
  11/9/26
  */
